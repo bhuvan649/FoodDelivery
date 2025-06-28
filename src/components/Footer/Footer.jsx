@@ -9,7 +9,8 @@ const Footer = () => {
                 <div className="footer-content-left">
                     <img src={assets.logo} alt="Tomato Logo" />
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vero?
+                Craving something delicious? With our food ordering app, you can browse your favorite dishes, customize orders, and get fresh meals delivered right to your doorstep. Fast, easy, and just a tap away—satisfy your hunger anytime, anywhere!
+
                     </p>
                     <div className="footer-social-icons">
                         <img src={assets.facebook_icon} alt="Facebook" />
