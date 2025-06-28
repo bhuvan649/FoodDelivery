@@ -5,7 +5,7 @@ import Placeorder from './pages/PlaceOrder/PlaceOrder';
 import Cart from './pages/Cart/Cart';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
-
+import './App.css'
 const App = () => {
   return (
     <>

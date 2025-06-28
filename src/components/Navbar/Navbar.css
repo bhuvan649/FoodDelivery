@@ -14,7 +14,16 @@
     list-style: none;
     gap: 20px;
     color: #49557e;
-    font-size: 18px
+    font-size: 18px;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
 }
 
 .navbar-right {
@@ -33,25 +42,60 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.navbar button  hover {
+
+.navbar button:hover {
     background-color: #fff4f2;
 }
-.navbar .active {
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
-} 
-.navbar li{
-    cursor: pointer;
-}
+
 .navbar-search-icon {
     position: relative;
 }
-.navbar-search-icon .dot{
+
+.navbar-search-icon .dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px;
     background-color: tomato;
-    border-radius: 5px;
+    border-radius: 50%;
     top: -8px;
     right: -8px;
+}
+
+.navbar-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
