@@ -347,7 +347,7 @@ export const food_list = [
         id: 32,
         name: "Cooked Noodles",
         image: food_32,
-        pric,
+        price: 500,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }
