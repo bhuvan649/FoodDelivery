@@ -1,7 +1,9 @@
 import basket_icon from './basket_icon.png'
+import basket_darkmode from './basket_darkmode.png'
 import logo from './logo.png'
-import header_img from './header_img.png'
+
 import search_icon from './search_icon.png'
+import search_darkmode from './search_darkmmode.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -63,8 +65,10 @@ import parcel_icon from './parcel_icon.png'
 export const assets = {
     logo,
     basket_icon,
-    header_img,
+    basket_darkmode,
+    
     search_icon,
+    search_darkmode,
     rating_starts,
     add_icon_green,
     add_icon_white,
@@ -282,7 +286,7 @@ export const food_list = [
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
     }, {
-        id: 25,
+        id: 24,
         name: "Rice Zucchini",
         image: food_24,
         price: 12,
@@ -326,7 +330,7 @@ export const food_list = [
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }, {
-        id: 20,
+        id: 30,
         name: "Veg Noodles",
         image: food_30,
         price: 12,

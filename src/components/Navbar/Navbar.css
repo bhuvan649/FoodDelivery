@@ -5,16 +5,26 @@
     align-items: center;
 }
 
+/* Logo */
 .navbar .logo {
-    width: 150px;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
+/* Menu Items */
 .navbar-menu {
     display: flex;
     list-style: none;
     gap: 20px;
-    color: #49557e;
+    color: #000000;
     font-size: 18px;
+}
+
+/* Dark mode menu color */
+body.dark-mode .navbar-menu {
+    color: #ccc;
 }
 
 .navbar li {
@@ -23,9 +33,15 @@
 
 .navbar .active {
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid #000000;
 }
 
+/* Dark mode active underline */
+body.dark-mode .navbar .active {
+    border-bottom: 2px solid #ccc;
+}
+
+/* Right Side (search + cart + login) */
 .navbar-right {
     display: flex;
     align-items: center;
@@ -35,18 +51,26 @@
 .navbar button {
     background: transparent;
     font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.navbar button:hover {
-    background-color: #fff4f2;
+
+/* Dark mode styles for button */
+body.dark-mode .navbar button {
+    color: #ddd;
+    border: 1px solid #999;
 }
 
+body.dark-mode .navbar button:hover {
+    background-color: #333;
+}
+
+/* Cart Notification Dot */
 .navbar-search-icon {
     position: relative;
 }
@@ -61,12 +85,19 @@
     right: -8px;
 }
 
+/* Icons */
 .navbar-icon {
     width: 24px;
     height: 24px;
     object-fit: contain;
     cursor: pointer;
 }
+
+/* Dark mode icon coloring (if needed) */
+body.dark-mode .navbar-icon {
+    filter: brightness(0.8);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 900px) {

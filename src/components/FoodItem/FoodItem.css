@@ -2,58 +2,88 @@
     width: 100%;
     margin: auto;
     border-radius: 15px;
+    background-color: white;
     box-shadow: 0px 0px 10px #00000015;
     transition: 0.3s;
     animation: fadeIn 1s;
 }
 
-.food-item-image{
-width: 100%;
-border-radius: 15px 15px 8px 8px;
-} 
+/* Dark mode card */
+body.dark-mode .food-item {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
 
+/* Image container */
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 8px 8px;
+}
 
-food-item-info {
+/* Info block */
+.food-item-info {
     padding: 20px;
 }
 
+/* Name + Rating */
 .food-item-name-rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-
 }
-.food-item-name-rating p{
+
+.food-item-name-rating p {
     font-size: 20px;
     font-weight: 500;
+    color: #000;
 }
-.food-item-name-rating img{
+
+/* Dark mode text */
+body.dark-mode .food-item-name-rating p {
+    color: #fff;
+}
+
+.food-item-name-rating img {
     width: 70px;
 }
-.food-item-desc{
+
+/* Description */
+.food-item-desc {
     color: #676767;
     font-size: 12px;
 }
-.food-item-price{
+
+/* Dark mode description */
+body.dark-mode .food-item-desc {
+    color: #aaa;
+}
+
+/* Price */
+.food-item-price {
     color: tomato;
     font-size: 22px;
-    font-weight:500;
+    font-weight: 500;
     margin: 10px 0px;
 }
-.food-item-img-container{
+
+/* Image container (positioned icons) */
+.food-item-img-container {
     position: relative;
 }
-.food-item-img-container .add{
+
+/* Add button */
+.food-item-img-container .add {
     width: 35px;
-    position:absolute;
+    position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
-
 }
-.food-item-counter{
+
+/* Counter (increment/decrement) */
+.food-item-counter {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -64,6 +94,12 @@ food-item-info {
     border-radius: 50px;
     background-color: white;
 }
-.food-item-counter img{
+
+/* Dark mode counter bg */
+body.dark-mode .food-item-counter {
+    background-color: #2e2e2e;
+}
+
+.food-item-counter img {
     width: 30px;
 }

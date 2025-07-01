@@ -1,14 +1,14 @@
 .place-order {
   display: flex;
-  align-items: flex-start; /* FIXED: was 'start' (invalid) */
-  justify-content: space-between; /* FIXED: 'Justify-content' → 'justify-content' */
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 50px;
   margin-top: 100px;
-  flex-wrap: wrap; /* 👍 Makes it responsive on smaller screens */
+  flex-wrap: wrap;
   padding: 20px;
 }
 
-/* Left section */
+/* Left Section */
 .place-order-left {
   width: 100%;
   max-width: min(500px, 100%);
@@ -18,6 +18,11 @@
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
+  color: #222;
+}
+
+body.dark-mode .place-order-left .title {
+  color: #f2f2f2;
 }
 
 .place-order-left input {
@@ -27,10 +32,18 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  outline-color: tomato; /* FIXED: was 'outline: tomato;' */
+  outline-color: tomato;
+  background-color: white;
+  color: #222;
 }
 
-/* Grouped input fields (horizontal) */
+body.dark-mode .place-order-left input {
+  background-color: #2c2c2c;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* Grouped input fields */
 .place-order-left .multi-fields {
   display: flex;
   gap: 10px;
@@ -40,17 +53,25 @@
   flex: 1;
 }
 
-/* Right section */
+/* Right Section */
 .place-order-right {
   width: 100%;
   max-width: min(500px, 100%);
 }
 
+/* Cart summary box */
 .place-order .cart-total {
   background-color: #fff;
   padding: 25px;
   border: 1px solid #eee;
   border-radius: 10px;
+  color: #222;
+}
+
+body.dark-mode .place-order .cart-total {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #eee;
 }
 
 .place-order .cart-total h2 {
@@ -63,6 +84,11 @@
   justify-content: space-between;
   margin-bottom: 10px;
   font-size: 16px;
+  color: #555;
+}
+
+body.dark-mode .cart-total-details {
+  color: #ccc;
 }
 
 .place-order .cart-total button {

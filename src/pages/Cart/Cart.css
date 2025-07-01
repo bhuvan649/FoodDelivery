@@ -15,6 +15,11 @@
   border-bottom: 1px solid #e2e2e2;
 }
 
+body.dark-mode .cart-items-title {
+  color: #ccc;
+  border-bottom: 1px solid #444;
+}
+
 /* Each item row */
 .cart-items-item {
   display: grid;
@@ -24,9 +29,15 @@
   padding: 10px 0;
   border-bottom: 1px solid #f0f0f0;
   font-size: 15px;
+  color: #333;
 }
 
-/* Image column */
+body.dark-mode .cart-items-item {
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+/* Image */
 .cart-items-item img {
   width: 50px;
   height: auto;
@@ -34,11 +45,14 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Horizontal separator */
 .cart hr {
   height: 1px;
   background-color: #e2e2e2;
   border: none;
+}
+
+body.dark-mode .cart hr {
+  background-color: #444;
 }
 
 .cart-items-item .cross {
@@ -48,7 +62,6 @@
   font-size: 18px;
 }
 
-/* Bottom section */
 .cart-bottom {
   margin-top: 80px;
   display: flex;
@@ -57,7 +70,7 @@
   gap: max(6vw, 20px);
 }
 
-/* Total section */
+/* Total box */
 .cart-total {
   flex: 1;
   display: flex;
@@ -70,9 +83,19 @@
   background: #fff;
 }
 
+body.dark-mode .cart-total {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+}
+
 .cart-total h2 {
   font-size: 22px;
   font-weight: 600;
+  color: #333;
+}
+
+body.dark-mode .cart-total h2 {
+  color: #eee;
 }
 
 .cart-total-details {
@@ -82,8 +105,19 @@
   font-size: clamp(14px, 1.2vw, 16px);
 }
 
+body.dark-mode .cart-total-details {
+  color: #ccc;
+}
+
 .cart-total hr {
   margin: 10px 0;
+  background-color: #e2e2e2;
+  height: 1px;
+  border: none;
+}
+
+body.dark-mode .cart-total hr {
+  background-color: #444;
 }
 
 /* Checkout button */
@@ -115,6 +149,10 @@
   margin-bottom: 10px;
 }
 
+body.dark-mode .cart-promocode p {
+  color: #ccc;
+}
+
 .cart-promocode-input {
   display: flex;
   gap: 10px;
@@ -124,6 +162,10 @@
   align-items: center;
 }
 
+body.dark-mode .cart-promocode-input {
+  background-color: #2a2a2a;
+}
+
 .cart-promocode-input input {
   flex: 1;
   background: transparent;
@@ -131,6 +173,11 @@
   outline: none;
   padding: 10px;
   font-size: 16px;
+  color: #333;
+}
+
+body.dark-mode .cart-promocode-input input {
+  color: #eee;
 }
 
 .cart-promocode-input button {
@@ -151,7 +198,6 @@
 /* --------------------
    🔁 Responsive Tweaks
 --------------------- */
-
 @media (max-width: 768px) {
   .cart-items-title,
   .cart-items-item {
@@ -159,7 +205,6 @@
     font-size: 14px;
   }
 
-  /* Hide columns: Price, Qty, Total, Remove */
   .cart-items-title p:nth-child(n+4),
   .cart-items-item p:nth-child(n+4) {
     display: none;

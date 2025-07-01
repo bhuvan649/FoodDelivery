@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import './App.css'
 import LoginPopup from './components/LoginPopup/LoginPopup';
+import DarkModeToggle from './components/DarkModeToggle/DarkModeToggle';
 const App = () => {
 
 const [showLogin,setShowLogin]=useState(false)
@@ -15,12 +16,17 @@ const [showLogin,setShowLogin]=useState(false)
     <>
     {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
         <div className="app">
+          
       <Navbar setShowLogin={setShowLogin} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Placeorder />} />
+        
       </Routes>
+      <DarkModeToggle />
+
+
     </div>
     <Footer/>
     </>

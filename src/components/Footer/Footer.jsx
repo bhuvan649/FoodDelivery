@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-content-left">
                     <img src={assets.logo} alt="Tomato Logo" />
                     <p>
-                Craving something delicious? With our food ordering app, you can browse your favorite dishes, customize orders, and get fresh meals delivered right to your doorstep. Fast, easy, and just a tap away—satisfy your hunger anytime, anywhere!
+                Craving something delicious?  Fast, easy, and just a tap away—satisfy your hunger anytime, anywhere!
 
                     </p>
                     <div className="footer-social-icons">
@@ -33,7 +33,7 @@ const Footer = () => {
                     <h2>Get In Touch</h2>
                     <ul>
                         <li>+1 212-000-0000</li>
-                        <li>contact@tomato.com</li>
+                        <li>contact@snapeats.com</li>
                     </ul>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const Footer = () => {
             <hr />
 
             <p className='footer-copyright'>
-                © 2024 Tomato.com — All Rights Reserved
+                © 2024 SnapEats.com — All Rights Reserved
             </p>
         </div>
     );
