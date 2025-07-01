@@ -37,17 +37,17 @@ const Placeorder = () => {
             <div>
               <div className="cart-total-details">
                 <p>Subtotal</p>
-                <p>${subtotal.toFixed(2)}</p>
+                <p>₹ {subtotal.toFixed(2)}</p>
               </div>
               <hr/>
               <div className="cart-total-details">
                 <p>Delivery Fee</p>
-                <p>${deliveryFee.toFixed(2)}</p>
+                <p>₹ {deliveryFee.toFixed(2)}</p>
               </div>
               <hr />
               <div className="cart-total-details">
                 <p>Total</p>
-                <p>${total.toFixed(2)}</p>
+                <p>₹ {total.toFixed(2)}</p>
               </div>
             </div>
             <button>PROCEED TO PAYMENT</button>
