@@ -1,12 +1,76 @@
-# React + Vite
+# 🍽️ Food Ordering App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive food ordering interface built using **React** with **Vite** as the build tool. This app allows users to explore a variety of food categories and view detailed items — perfect as a frontend for an online food delivery service.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧭 Explore menu categories with horizontal scroll
+- 🖼️ Clickable circular category images with active highlights
+- 📦 Food item cards with images, prices, and descriptions
+- 🔄 Dynamic category filtering
+- 💡 Clean, minimal UI with responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React (with Hooks)
+- ⚡ Vite (fast dev server and build)
+- 🎨 CSS Modules or plain CSS
+- 📁 Modular file structure
+
+---
+
+## 📁 Project Structure
+```
+├── public/
+│ └── index.html
+├── src/
+│ ├── assets/
+│ │ └── frontend_assets/ # All images (menu, food, icons)
+│ │ └── assets.js # Exports all assets & menu/food data
+│ ├── components/
+│ │ ├── ExploreMenu/
+│ │ │ ├── ExploreMenu.jsx
+│ │ │ └── ExploreMenu.css
+│ │ └── Header/...
+│ ├── pages/
+│ │ └── Home/
+│ │ └── Home.jsx
+│ ├── App.js
+│ └── main.jsx
+└── package.json
+```
+
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/bhuvan649/FoodDelivery.git
+cd your-repo-name
+```
+### 2. Install Dependencies
+npm install
+
+### 3. Start the Dev Server
+npm run dev
+
+
+### 🧩 Usage
+    Click on any menu category to view items.
+    Selected category highlights with a red border.
+    Explore food cards with ratings, prices, and short descriptions.
+
+## 📷 Screenshots
+
+### 🏠 Home Page
+<img src="./public/screenshots/homepage.png" width="700"/>
+
+### 🍽️ Explore Menu Section
+<img src="./public/screenshots/explore-menu.png" width="700"/>
