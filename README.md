@@ -56,10 +56,10 @@ git clone https://github.com/bhuvan649/FoodDelivery.git
 cd your-repo-name
 ```
 ### 2. Install Dependencies
-npm install
+    npm install
 
 ### 3. Start the Dev Server
-npm run dev
+    npm run dev
 
 
 ### 🧩 Usage
@@ -70,7 +70,7 @@ npm run dev
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-<img src="./public/homepage.png" width="700"/>
+<img src="/homepage.png" width="700"/>
 
 ### 🍽️ Explore Menu Section
 <img src="./public/explore-menu.png" width="700"/>
