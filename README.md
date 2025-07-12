@@ -70,7 +70,7 @@ npm run dev
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-<img src="./public/screenshots/homepage.png" width="700"/>
+<img src="./public/homepage.png" width="700"/>
 
 ### 🍽️ Explore Menu Section
-<img src="./public/screenshots/explore-menu.png" width="700"/>
+<img src="./public/explore-menu.png" width="700"/>
