@@ -70,7 +70,7 @@ cd your-repo-name
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-<img src="/homepage.png" width="700"/>
+<img src="./public/homepage.png" width="700"/>
 
 ### 🍽️ Explore Menu Section
 <img src="./public/explore-menu.png" width="700"/>
