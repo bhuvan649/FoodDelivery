@@ -18,7 +18,7 @@ A modern, responsive food ordering interface built using **React** with **Vite**
 
 - ⚛️ React (with Hooks)
 - ⚡ Vite (fast dev server and build)
-- 🎨 CSS Modules or plain CSS
+- 🎨 Plain CSS
 - 📁 Modular file structure
 
 ---
@@ -53,7 +53,6 @@ A modern, responsive food ordering interface built using **React** with **Vite**
 
 ```bash
 git clone https://github.com/bhuvan649/FoodDelivery.git
-cd your-repo-name
 ```
 ### 2. Install Dependencies
     npm install
