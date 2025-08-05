@@ -7,8 +7,9 @@ const Header = () => {
         <div className="header-contents">
           <h2>Order Your Favourite Food Here</h2>
           <p>Craving something delicious? With our food ordering app, you can browse your favorite dishes, customize orders, and get fresh meals delivered right to your doorstep. Fast, easy, and just a tap away—satisfy your hunger anytime, anywhere!</p>
-          <button> View Menu </button>
-
+          <a href="#explore-menu">
+          <button>View Menu</button>
+          </a>
         </div>
       </div>
 

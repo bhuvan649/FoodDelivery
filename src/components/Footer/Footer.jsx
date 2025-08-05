@@ -7,10 +7,12 @@ const Footer = () => {
         <div className='footer' id='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
+                    <a href="">
                     <img src={assets.logo} alt="Tomato Logo" />
+                    </a>
+                    
                     <p>
                 Craving something delicious?  Fast, easy, and just a tap away—satisfy your hunger anytime, anywhere!
-
                     </p>
                     <div className="footer-social-icons">
                         <img src={assets.facebook_icon} alt="Facebook" />
@@ -41,7 +43,7 @@ const Footer = () => {
             <hr />
 
             <p className='footer-copyright'>
-                © 2024 SnapEats.com — All Rights Reserved
+                © 2025 SnapEats.com — All Rights Reserved
             </p>
         </div>
     );
